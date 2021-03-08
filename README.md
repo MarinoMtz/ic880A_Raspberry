@@ -32,10 +32,10 @@ This repository helps you install a LoRa Gateway using the LoRa iC880 Concentrat
     6.3 Open and edit the configuration gile `sudo nano /etc/wpa_supplicant/wpa_supplicant.conf`
     
     8.3 Add the following at the begining
-        ```
-        network={
-        ssid="testing"
-        psk="testingPassword"
-        }
-        ```
+    ```
+    network={
+    ssid="testing"
+    psk="testingPassword"
+    }
+    ```
     
