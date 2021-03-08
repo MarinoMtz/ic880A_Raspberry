@@ -4,8 +4,9 @@ This repository helps you install a LoRa Gateway using the LoRa iC880 Concentrat
 
 ## Hardware Needed:
 
-* Raspberry Pi 3.0 with 32 GB SD Card
+* Raspberry Pi 3.0 with 
 * iC880 Concentrator
+* SD Card (< 32GB)
 
 ## Software Requirements
 
@@ -13,3 +14,9 @@ This repository helps you install a LoRa Gateway using the LoRa iC880 Concentrat
 * HAL Gateway Driver 
 * MQTT Broker 
 * Chripstack Gateway Bridge
+
+## Install
+
+1. Operative System for the Raspberry Pi
+    1.2 
+    2.
