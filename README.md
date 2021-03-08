@@ -19,7 +19,7 @@ This repository helps you install a LoRa Gateway using the LoRa iC880 Concentrat
 
 1. Operative System for the Raspberry Pi [Raspbian](https://www.raspberrypi.org/documentation/installation/installing-images/)
 
-    1.1 On a linux machine install the rpi-imager `<sudo apt install rpi-imager>` 
+    1.1 On a linux machine install the rpi-imager `sudo apt install rpi-imager` 
     1.2 Download and install the SO (Raspberry Pi OS 32-bit) `<sudo rpi-imager>` 
 
 2. Configure the WiFi network acces 
