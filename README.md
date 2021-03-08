@@ -25,9 +25,13 @@ This repository helps you install a LoRa Gateway using the LoRa iC880 Concentrat
 2. Configure the WiFi network acces 
 
     2.1 Open the raspi-config `<sudo raspi-config>`
-    2.2 Scan for wireless networks `<sudo iwlist wlan0 scan>`
-    2.3 Open and edit the configuration gile `<sudo nano /etc/wpa_supplicant/wpa_supplicant.conf>`
-    3.3 `<network={
+    
+    4.2 Scan for wireless networks `<sudo iwlist wlan0 scan>`
+    
+    6.3 Open and edit the configuration gile `<sudo nano /etc/wpa_supplicant/wpa_supplicant.conf>`
+    
+    8.3 `<network={
          ssid="testing"
          psk="testingPassword"
          } >`
+    
