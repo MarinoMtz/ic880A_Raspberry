@@ -38,10 +38,14 @@ This repository helps you install a LoRa Gateway using the LoRa iC880 Concentrat
     psk="testingPassword"
     }
    ```
+    8.4 Get the IP address `hostname -I`
+   
 3. Enable SSH
 
     3.1 Open the raspi-config `sudo raspi-config`
     
     3.2 Select `Interfacing Options` > `SSH` > `Yes` > `Ok` > `Finish`
     
-    3.3 
+    3.3 Conec to to the Raspberry using `ssh pi@<IP>`
+
+4. Clone this repository `git clone https://github.com/MarinoMtz/ic880A_Raspberry.git`
