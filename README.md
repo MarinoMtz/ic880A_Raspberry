@@ -58,3 +58,7 @@ This repository helps you install a LoRa Gateway using the LoRa iC880 Concentrat
 
 8. Edit the .json files
 
+9. Install Mosquitto `sudo apt install mosquitto`
+
+10. Install Chirpstack  
+
