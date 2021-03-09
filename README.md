@@ -49,3 +49,12 @@ This repository helps you install a LoRa Gateway using the LoRa iC880 Concentrat
     3.3 Conec to to the Raspberry using `ssh pi@<IP>`
 
 4. Clone this repository `git clone https://github.com/MarinoMtz/ic880A_Raspberry.git`
+
+5. Install the HAL Driver `cd /ic880A_Raspberry/lora_gateway` > `sudo make`
+
+6. Install the Semtech Packet Forwarder `cd /ic880A_Raspberry/packet_forwarder ` > `sudo make`
+
+7. Reset the SPI `cd /ic880A_Raspberry/SPI_reset ` > `sh SPI_reset.sh`
+
+8. Edit the .json files
+
