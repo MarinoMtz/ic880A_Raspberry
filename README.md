@@ -62,3 +62,7 @@ This repository helps you install a LoRa Gateway using the LoRa iC880 Concentrat
 
 10. Install Chirpstack  
 
+11. Add the different process at reboot
+
+11.1 Edit the `/etc/rc.local` file by adding:
+
