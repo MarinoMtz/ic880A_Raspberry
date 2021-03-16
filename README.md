@@ -60,9 +60,14 @@ This repository helps you install a LoRa Gateway using the LoRa iC880 Concentrat
 
 9. Install Mosquitto `sudo apt install mosquitto`
 
-10. Install Chirpstack  
+10. Install Chirpstack gateway 
 
 11. Add the different process at reboot
 
-11.1 Edit the `/etc/rc.local` file by adding:
+11.1 Edit the `/etc/rc.local` file by adding this at the end of the file:
 
+```
+sudo systemctl start chirpstack-gateway-bridge
+(cd /home/pi/ic880A_Raspberry/SPI_reset; sudo sh SPI_reset.sh)
+(cd /home/pi/ic880A_Raspberry/packet_forwarder/lora_pkt_fwd; ./lora_pkt_fwd)
+```
