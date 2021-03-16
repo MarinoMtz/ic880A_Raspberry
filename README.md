@@ -74,8 +74,8 @@ This repository helps you install a LoRa Gateway using the LoRa iC880 Concentrat
 
     10.1 Edit the `/etc/rc.local` file by adding this at the end of the file:
 
-```
-sudo systemctl start chirpstack-gateway-bridge
-(cd /home/pi/ic880A_Raspberry/SPI_reset; sudo sh SPI_reset.sh)
-(cd /home/pi/ic880A_Raspberry/packet_forwarder/lora_pkt_fwd; ./lora_pkt_fwd)
-```
+    ```
+    sudo systemctl start chirpstack-gateway-bridge
+    (cd /home/pi/ic880A_Raspberry/SPI_reset; sudo sh SPI_reset.sh)
+    (cd /home/pi/ic880A_Raspberry/packet_forwarder/lora_pkt_fwd; ./lora_pkt_fwd)
+    ```
