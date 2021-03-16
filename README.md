@@ -21,24 +21,24 @@ This repository helps you install a LoRa Gateway using the LoRa iC880 Concentrat
 
     1.1 On a linux machine install the rpi-imager `sudo apt install rpi-imager` 
     
-    3.2 Download and install the SO (Raspberry Pi OS 32-bit) `sudo rpi-imager` 
+    1.2 Download and install the SO (Raspberry Pi OS 32-bit) `sudo rpi-imager` 
 
 2. Configure the WiFi network acces 
 
     2.1 Open the raspi-config `sudo raspi-config`
     
-    4.2 Scan for wireless networks `sudo iwlist wlan0 scan`
+    2.2 Scan for wireless networks `sudo iwlist wlan0 scan`
     
-    6.3 Open and edit the configuration gile `sudo nano /etc/wpa_supplicant/wpa_supplicant.conf`
+    2.3 Open and edit the configuration gile `sudo nano /etc/wpa_supplicant/wpa_supplicant.conf`
     
-    8.3 Add the following at the begining of the file with the corresponging parameters
+    2.4 Add the following at the begining of the file with the corresponging parameters
     ```
     network={
     ssid="testing"
     psk="testingPassword"
     }
    ```
-    8.4 Get the IP address `hostname -I`
+    2.5 Get the IP address `hostname -I`
    
 3. Enable SSH
 
@@ -58,13 +58,21 @@ This repository helps you install a LoRa Gateway using the LoRa iC880 Concentrat
 
 8. Edit the .json files
 
-9. Install Mosquitto `sudo apt install mosquitto`
+9. Install Chirpstack gateway [chirpstack.io](https://www.chirpstack.io/project/install/requirements/) 
 
-10. Install Chirpstack gateway 
+    9.1 Install Mosquitto `sudo apt install mosquitto`
+    
+    10.2 `sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 1CE2AFD36DBCCA00 `
+    
+    11.3 `sudo echo "deb https://artifacts.chirpstack.io/packages/3.x/deb stable main" | sudo tee /etc/apt/sources.list.d/chirpstack.list `
+    
+    11.4 `sudo apt update`
+    
+    11.5 ` sudo apt install chirpstack-gateway-bridge`
 
-11. Add the different process at reboot
+10. Add the different processes at reboot
 
-11.1 Edit the `/etc/rc.local` file by adding this at the end of the file:
+    10.1 Edit the `/etc/rc.local` file by adding this at the end of the file:
 
 ```
 sudo systemctl start chirpstack-gateway-bridge
