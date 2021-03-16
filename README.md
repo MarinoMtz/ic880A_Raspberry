@@ -62,13 +62,13 @@ This repository helps you install a LoRa Gateway using the LoRa iC880 Concentrat
 
     9.1 Install Mosquitto `sudo apt install mosquitto`
     
-    10.2 `sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 1CE2AFD36DBCCA00 `
+    9.2 `sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 1CE2AFD36DBCCA00 `
     
-    11.3 `sudo echo "deb https://artifacts.chirpstack.io/packages/3.x/deb stable main" | sudo tee /etc/apt/sources.list.d/chirpstack.list `
+    9.3 `sudo echo "deb https://artifacts.chirpstack.io/packages/3.x/deb stable main" | sudo tee /etc/apt/sources.list.d/chirpstack.list `
     
-    11.4 `sudo apt update`
+    9.4 `sudo apt update`
     
-    11.5 ` sudo apt install chirpstack-gateway-bridge`
+    9.5 `sudo apt install chirpstack-gateway-bridge`
 
 10. Add the different processes at reboot
 
